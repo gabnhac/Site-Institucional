@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVIÇOS</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="estiloPainel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+  <nav>
+    <nav class="navbar navbar-expand-lg bg-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PAINEL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-fill justify-content-end ">
+              <li class="nav-item">
+                <a class="nav-link" href="painelDesign.html">Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="painelServico.html">Serviços</a>
+              </li>
+              <li class="nav-item dropdown d-flex">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/iconeUser.png" class="img-thumbnail thumb-icon"> ADMIN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="loginPage.html">Sair</a></li>
+                </ul>
+              </li>
+            </div>
+
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</nav>
+<div class="corpo container">
+    <div class="row">
+        <h1 style="text-align: center;">PAINEL SERVIÇOS</h1>
+
+        <div class="container col-6 cad-destino">
+          <h3>Cadastrar Destino</h3>
+          <label for="imgCidade">Anexar imagem: <br><img src="images/botaoUpload.png" alt="Enviar imagem"></label>
+          <input type="file" id="imgCidade">
+          <label for="nomeCidade">Nome da cidade: </label>
+          <input type="text" id="nomeCidade">
+          <label for="novaURL">URL relacionada: </label>
+          <input type="text" id="novaURL">
+          <button type="submit" class="botao-salvar">Adicionar destino</button>
+        </div>
+
+        <div class="container col-6 cad-destino">
+          <h3>Modificar Banner</h3>
+          <label for="imgCidade">Anexar imagem: <br><img src="images/botaoUpload.png" alt="Enviar imagem" id="banner"></label>
+          <input type="file" id="imgBanner">
+          <label for="textoBanner">Alterar texto: </label>
+          <input type="text" id="textoBanner">
+          <label for="novaURL2">URL relacionada: </label>
+          <input type="text" id="novaURL2">
+          <button type="submit" class="botao-salvar">Salvar banner</button>
+        </div>
+        
+
+        <div class="container col-6 cad-destino">
+          <h3>Cadastrar Pacotes</h3>
+          <label for="imgCidade">Anexar imagem: <br><img src="images/botaoUpload.png" alt="Enviar imagem"></label>
+          <input type="file" id="imgPacote">
+          <label for="tituloPacote">Título do pacote: </label>
+          <input type="text" id="tituloPacote">
+          <label for="descPacote">Descrição: </label>
+          <input type="text" id="descPacote">
+          <label for="valorPacote">Pagamento: </label>
+          <input type="text" id="valorPacote">
+          <button type="submit" class="botao-salvar">Adicionar pacote</button>
+        </div>
+
+        <div class="container col-6 cad-destino">
+          <h3>Voos em Promoção</h3>
+          <label for="tituloVoo">Título: </label>
+          <input type="text" id="tituloVoo">
+          <label for="descVoo">Descrição: </label>
+          <input type="text" id="descVoo">
+          <label for="valorVoo">Pagamento: </label>
+          <input type="text" id="valorVoo">
+          <label for="timerVoo">Timer de oferta: </label>
+          <input type="date" id="timerVoo">
+          <button type="submit" class="botao-salvar">Salvar promoção</button>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js">
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estiloHome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="footer-navbar.css">
+</head>
+<body>
+    <header>
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logoAT.png" alt="Logo Alma Turismo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="margin-right: 0px !important;" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item">
+                            <a class="nav-link textos-nav" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active textos-nav" href="serviços.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textos-nav" href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-5" style="width: 10px !important; margin-left: 64% !important;">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle textos-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             <img src="images/iconeUser.png" alt="Foto do Usuário">  Usuário
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cliente.html">Minhas Viagens</a></li>
+                                <li><a class="dropdown-item" href="cadastro.html">Cadastro do Cliente</a></li>
+                                <li><a class="dropdown-item" href="loginPage.html">Painel</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+    </header>
+    <main>
+        <div class="carrossel-maior">
+            <br>
+              <!--Banner carrossel de promoções-->
+              <h4 id="titulo-carrossel">Promoções</h4>
+                <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 20px; border-radius: 10px;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/carrossel3.jpg" class="d-block w-100" alt="3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <button class="botao-home">
+                                    <h5 class="textos" style="font-size: 18px; margin-bottom: 0;">Saiba mais</h5>
+                                </button>
+                            </div>
+                        </div> 
+                        <div class="carousel-item">
+                            <img src="images/carrossel1.jpg" class="d-block w-100" alt="1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <button class="botao-home">
+                                <h5 class="textos" style="font-size: 18px; margin-bottom: 0;">Saiba mais</h5>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carrossel2.jpg" class="d-block w-100" alt="2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <button class="botao-home">
+                                    <h5 class="textos" style="font-size: 18px; margin-bottom: 0;">Saiba mais</h5>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>   
+            </div>
+        <!--Busca de pacotes-->
+        <div class="pacotes">
+        <section id="bg-s-busca">
+            <form method="post">
+                <div id="bg-menu">
+                    <h4 id="titulo-busca">Encontre o melhor pacote de viagem!</h4>
+                    <div id="menu-p">
+                        <div class="menu-caixas-input">
+                            <div class="caixas-input afastamento-responsivo>">
+                                <label class="textos">
+                                    <img src="images/iconAirplane.png" alt="Icone aviãozinho de papel" class="icones">
+                                    <input type="text" placeholder="Origem" name="origem" id="origem" style="border:none; outline: none;">
+                                </label>
+                            </div>
+                            <div id="icone-responsivo">
+                                <a href="#"><img src="images/iconTroca.png" alt="Icone trocar conteúdos" style="width: 35px; height: 35px;"></a>
+                            </div>
+                            <div class="caixas-input afastamento-responsivo">
+                                <label class="textos">
+                                    <img src="images/iconDestino.png" alt="Icone destino" style="width:23px; height: 26px;">
+                                    <input type="text" placeholder="Destino" name="destino" id="destino" style="border:none; outline: none;">
+                                </label>
+                            </div>
+                            <div>
+                                <div class="caixas-input">
+                                    <label class="textos">
+                                        <input type="date" style="border:none; outline: none; padding-left: 10px;">
+                                    </label>
+                                </div>
+                                <h6 id="ida">Ida</h6>
+                            </div>
+                            <div>
+                                <div class="caixas-input">
+                                    <label class="textos"> 
+                                        <input type="date" style="border:none; outline: none; padding-left: 10px;">
+                                    </label>
+                                </div>
+                                <h6 id="volta">Volta</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="estudantes-done">
+                        <label class="textos">
+                                <input type="checkbox" name="caixa-estudante" value="caixa-estudante"> Passagem para estudante
+                        </label>
+                        <button id="done"type="submit" class="botao-home">Concluído</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <br>
+    </div>
+    
+        <!--Galeria de destinos-->
+        <div class="destinos">
+           <h4 id="titulo-destinos">Destinos</h4>
+            <section class="container-p" id="destinos">
+                <div class="gallery" style="width:185px">
+                    <a target="_blank" href="images/destinos/fortaleza.jpg">
+                        <img src="images/destinos/fortaleza.jpg" alt="Fortaleza" width="600" height="400" class="center">
+                    </a>
+                    <div class="desc">Fortaleza</div>
+                </div>
+                <div class="gallery" style="width:185px">
+                    <a target="_blank" href="images/destinos/ouro_preto.jpg">
+                        <img src="images/destinos/ouro_preto.jpg" alt="Ouro Preto" width="600" height="400" class="center">
+                    </a>
+                    <div class="desc">Ouro Preto</div>
+                    </div>
+                <div class="gallery" style="width:185px">
+                    <a target="_blank" href="images/destinos/portos_de_galinhas.jpg">
+                        <img src="images/destinos/portos_de_galinhas.jpg" alt="Porto de Galinhas" width="600" height="400" class="center">
+                    </a>
+                    <div class="desc">Porto de Galinhas</div>
+                </div>
+                <div class="gallery" style="width:185px">
+                    <a target="_blank" href="images/destinos/recife.jpg">
+                        <img src="images/destinos/recife.jpg" alt="Recife" width="600" height="400" class="center">
+                    </a>
+                    <div class="desc">Recife</div>
+                </div>
+                <div class="gallery" style="width:185px">
+                    <a target="_blank" href="images/destinos/tiradentes.jpg">
+                        <img src="images/destinos/tiradentes.jpg" alt="Tiradentes" width="600" height="400" class="center">
+                    </a>
+                    <div class="desc">Tiradentes</div>
+                </div>
+                <div class="gallery" style="width:185px">
+                    <a target="_blank" href="images/destinos/congonhas.jpg">
+                        <img src="images/destinos/congonhas.jpg" alt="Congonhas" width="600" height="400" class="center">
+                    </a>
+                    <div class="desc">Congonhas</div>
+                    </div>
+                <div class="gallery" style="width:185px">
+                    <a target="_blank" href="images/destinos/santanadoriacho.jpg">
+                        <img src="images/destinos/santanadoriacho.jpg" alt="Santana do Riacho" width="600" height="400" class="center">
+                    </a>
+                    <div class="desc">Santana do Riacho</div>
+                </div>
+                <div class="gallery" style="width:185px">
+                    <a target="_blank" href="images/destinos/belohorizonte.jpg">
+                        <img src="images/destinos/belohorizonte.jpg" alt="Belo Horizonte" width="600" height="400" class="center">
+                    </a>
+                    <div class="desc">Belo Horizonte</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoATletras.png" alt="ALMA Turismo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="serviços.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="cliente.html">Área do Cliente</a></li>
+                </ul>
+            </div>
+            
+            <div class="social">
+                <ul>
+                    <a href="https://www.facebook.com"><img src="images/iconFacebook.png" alt="Facebook"></a> <br>
+                    <a href="https://www.twitter.com"><img src="images/iconTwiter.png" alt="Twitter"></a> <br>
+                    <a href="https://www.instagram.com"><img src="images/iconInsta.png" alt="Instagram"></a> <br>
+                    <a href="https://www.linkedin.com"><img src="images/iconLinkedin.png" alt="Linkedin"></a> <br>
+                </ul>
+            </div>
+            <p style="text-align: center; margin-bottom: 0px;">2023. Todos os direitos reservados. © Alma Turismo.</p>
+        </div>
+    </footer>
+</body>
+</html>

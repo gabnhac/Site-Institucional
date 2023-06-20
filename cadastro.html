@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estiloHome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="footer-navbar.css">
+        <link rel="stylesheet" href="cliente.css">
+    </head>
+    <body class="cadastro">
+    <div class="fundo">  
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-nav">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="images/logoAT.png" alt="Logo Alma Turismo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" style="margin-right: 0px !important;" id="navbarNavDropdown">
+                      <ul class="navbar-nav me-5">
+                          <li class="nav-item">
+                              <a class="nav-link textos-nav" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active textos-nav" href="serviços.html">Serviços</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link textos-nav" href="sobre.html">Sobre</a>
+                          </li>
+                      </ul>
+                      <ul class="navbar-nav ms-5" style="width: 10px !important; margin-left: 64% !important;">
+                          <li class="nav-item dropdown ">
+                              <a class="nav-link dropdown-toggle textos-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img src="images/iconeUser.png" alt="Foto do Usuário">  Usuário
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cliente.html">Minhas Viagens</a></li>
+                                <li><a class="dropdown-item" href="cadastro.html">Cadastro do Cliente</a></li>
+                                <li><a class="dropdown-item" href="loginPage.html">Painel</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+            </nav>       
+          </header>
+    
+
+    
+        <main>
+            <section>
+                <div class="cadastro-container">
+                    <h1 class="cadastro-title">Cadastro</h1>
+                    <form class="cadastro-form">
+                    <div class="cadastro-form-group">
+                        <label for="nome" class="cadastro-label">Como podemos te chamar?</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome e Sobrenome" required class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-form-group">
+                        <label for="email" class="cadastro-label">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-form-group">
+                        <label for="celular" class="cadastro-label">Celular com DDD</label>
+                        <input type="tel" id="celular" name="celular" placeholder="Celular com DDD" pattern="\(\d{2}\) \d{5}-\d{4}" required class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-form-group">
+                        <label for="cpf" class="cadastro-label">Documento CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="___.___.___-__" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-form-group">
+                        <label for="senha" class="cadastro-label">Crie uma senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-form-group">
+                        <input type="submit" value="Criar conta" class="cadastro-button">
+                    </div>
+                    </form>
+                    </div>
+            </section>
+        </main>  
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/logoATletras.png" alt="ALMA Turismo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="serviços.html">Serviços</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cliente.html">Área do Cliente</a></li>
+                    </ul>
+                </div>
+                
+                <div class="social">
+                    <ul>
+                        <a href="https://www.facebook.com"><img src="images/iconFacebook.png" alt="Facebook"></a> <br>
+                        <a href="https://www.twitter.com"><img src="images/iconTwiter.png" alt="Twitter"></a> <br>
+                        <a href="https://www.instagram.com"><img src="images/iconInsta.png" alt="Instagram"></a> <br>
+                        <a href="https://www.linkedin.com"><img src="images/iconLinkedin.png" alt="Linkedin"></a> <br>
+                    </ul>
+                </div>
+                <p style="text-align: center; margin-bottom: 0px;">2023. Todos os direitos reservados. © Alma Turismo.</p>
+            </div>
+        </footer>
+    </div>
+</div>  
+    </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</html>
+
