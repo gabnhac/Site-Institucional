@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estiloHome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="footer-navbar.css">
+     <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logoAT.png" alt="Logo Alma Turismo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="margin-right: 0px !important;" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item">
+                            <a class="nav-link textos-nav" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active textos-nav" href="serviços.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textos-nav" href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-5" style="width: 10px !important; margin-left: 64% !important;">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle textos-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             <img src="images/iconeUser.png" alt="Foto do Usuário">  Usuário
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cliente.html">Minhas Viagens</a></li>
+                                <li><a class="dropdown-item" href="cadastro.html">Cadastro do Cliente</a></li>
+                                <li><a class="dropdown-item" href="loginPage.html">Painel</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+    </header>
+ 
+
+    <div class="bg-form">
+        <div class="container" id="container">
+            <div class="texto-topo">
+                <h4 class="titulo-tudo">Como Começamos?</h4></div>
+            <p style="text-align:justify;">Alma Turismo é uma empresa fictícia criada com propósito de dar personalidade ao desenvolvimento de um site institucional para a disciplina de Projetos Práticos em Tecnologia da Informação, ministrada pela professora Misliene Dalila.</p>
+            <div class="container formulario">  
+            </div>
+            
+            <div class="subtitulos">
+            <h4 class="titulo-tudo">Membros da Equipe</h4></div>
+            <div class="container">
+                <div class="membros" style="justify-content: space-around;">
+                    <div>
+                        <ul>
+                            <li>Danilo Oliveira</li>
+                            <li>Gabriel Lucena</li>
+                            <li>Jhonata Versiane</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Kamila Silva</li>
+                            <li>Kauã Matheus</li>
+                            <li>Saulo Silva</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitulos">
+            <h4 class="titulo-tudo">Tecnologias Utilizadas</h4></div>
+            <div class="tecnologias">
+                <p>HTML</p>
+                <p>CSS</p>                
+                <p>Boostrap</p>
+                <p>JavaScript</p>
+            </div>
+            <div class="subtitulos">
+            <h4 class="titulo-tudo">Trabalhe Conosco</h4></div>
+            <h5>Vagas disponíveis:</h5>
+            <div class="row">
+            <div class="vaga col">
+                <h3 id="h3" >Desenvolvedor Front-end</h3>
+                <ul id="ul">Competências:
+                    <li>Gerenciar design</li>
+                    <li>Desenvolver páginas e fazer sua manutenção</li>
+                </ul>
+                <button type="button" onclick="aplicar()" class="btn btn-primary">Aplicar para esta vaga</button>
+            </div>
+            <div class="vaga col">
+                <h3 id="h3" >Desenvolvedor Back-end</h3>
+                <ul id="ul">Competências:
+                    <li>Gerenciar banco de dados</li>
+                    <li>Gerenciar atribuições do painel administrativo</li>
+                </ul>
+                <button type="button" onclick="aplicar()" class="btn btn-primary">Aplicar para esta vaga</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="texto-topo">
+        <h4 class="titulo-tudo">Entre em contato</h4>
+        <h6>Preencha os Campos Abaixo Para Deixar Sua Mensagem</h6>
+    </div>
+        <form class="form-contato" action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="6865411d-1832-4a99-a576-5543219c69fa">
+            <input type="hidden" name="redirectTo" value="https://127.0.0.1/alma_turismo/obrigado.html">
+
+            
+        </form>
+    </div>
+        
+      
+    
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+            <img src="images/logoATletras.png" alt="ALMA Turismo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cliente.html">Área do Cliente</a></li>
+            </ul>
+        </div>
+        
+        <div class="social">
+            <ul>
+                <a target="_blank" href="https://www.facebook.com"><img src="images/iconFacebook.png" alt="Facebook"></a> <br>
+                <a target="_blank" href="https://www.twitter.com"><img src="images/iconTwiter.png" alt="Twitter"></a> <br>
+                <a target="_blank" href="https://www.instagram.com"><img src="images/iconInsta.png" alt="Instagram"></a> <br>
+                <a target="_blank" href="https://www.linkedin.com"><img src="images/iconLinkedin.png" alt="Linkedin"></a> <br>
+            </ul>
+        </div>
+        <p style="text-align: center; margin-bottom: 0px;">2023. Todos os direitos reservados. © Alma Turismo.</p>
+    </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

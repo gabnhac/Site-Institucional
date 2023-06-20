@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minhas Viagens</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estiloHome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="footer-navbar.css">
+        <link rel="stylesheet" href="cliente.css">
+    </head>
+    <body class="cliente">
+    <div class="fundo"> 
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-nav">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="images/logoAT.png" alt="Logo Alma Turismo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" style="margin-right: 0px !important;" id="navbarNavDropdown">
+                      <ul class="navbar-nav me-5">
+                          <li class="nav-item">
+                              <a class="nav-link textos-nav" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active textos-nav" href="serviços.html">Serviços</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link textos-nav" href="sobre.html">Sobre</a>
+                          </li>
+                      </ul>
+                      <ul class="navbar-nav ms-5" style="width: 10px !important; margin-left: 64% !important;">
+                          <li class="nav-item dropdown ">
+                              <a class="nav-link dropdown-toggle textos-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img src="images/iconeUser.png" alt="Foto do Usuário">  Usuário
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cliente.html">Minhas Viagens</a></li>
+                                <li><a class="dropdown-item" href="cadastro.html">Cadastro do Cliente</a></li>
+                                <li><a class="dropdown-item" href="loginPage.html">Painel</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+            </nav>       
+          </header>
+    
+        <main>
+            <div class="viagens-container">
+                <h1 class="viagens-title">Minhas Viagens</h1>
+                <div class="viagens-list"> 
+                </div>
+                <div class="viagens-item">
+                    <h5 class="viagens-info-destaque">Data da viagem</h5>
+                    <p class="viagens-data">20/08/2023 às 10:00</p>
+                    <p class="viagens-cidades">Fortaleza → Porto de Galinhas</p>
+                    
+                    <div class="viagens-info">
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Id do pedido:</span> 123456</p>
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Data do pedido:</span> 01/06/2023</p>
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Valor:</span> R$ 1500,00</p>
+                    </div>
+                    <hr class="viagens-linha">
+                </div>
+                
+                <div class="viagens-item">
+                        <h5 class="viagens-info-destaque">Data da viagem</h5>
+                        <p class="viagens-data">10/09/2023 às 15:00</p>
+                        <p class="viagens-cidades">Ouro Preto → Fortaleza</p>
+                        
+                    <div class="viagens-info">
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Id do pedido:</span> 234567</p>
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Data do pedido:</span> 15/07/2023</p>
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Valor:</span> R$ 2000,00</p>
+                    </div>
+                    <hr class="viagens-linha">
+                </div>
+            
+            <div class="viagens-item">
+                <h5 class="viagens-info-destaque">Data da viagem</h5>
+                <p class="viagens-data">05/05/2023 às 12:00 - Encerrado</p>
+                <p class="viagens-cidades">Fortaleza → Belo Horizonte</p>
+
+                    <div class="viagens-info">
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Id do pedido:</span> 345678</p>
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Data do pedido:</span> 01/04/2023</p>
+                        <p class="viagens-info-item"><span class="viagens-info-destaque">Valor:</span> R$ 1800,00</p>
+                    </div>
+                    <hr class="viagens-linha">
+            </div>
+            
+            <div class="viagens-item">
+                <h5 class="viagens-info-destaque">Data da viagem</h5>
+                <p class="viagens-data">25/04/2023 - 12:00 - Encerrado</p>
+                <p class="viagens-cidades">Congonhas → Santana do Riacho</p>
+                <div class="viagens-info">
+                <p class="viagens-info-item"><span class="viagens-info-destaque">Id do pedido:</span>456789</p>
+                <p class="viagens-info-item"><span class="viagens-info-destaque">Data do pedido:</span> 10/03/2023</p>
+                <p class="viagens-info-item"><span class="viagens-info-destaque">Valor:</span> R$ 1200,00</p>
+                </div>
+                <hr class="viagens-linha">
+            </div>
+            
+            <div class="viagens-item">
+                <h5 class="viagens-info-destaque">Data da viagem</h5>
+                <p class="viagens-data">25/03/2023 às 18:00 - Encerrado</p>
+                <p class="viagens-cidades">Tiradentes → Recife</p>
+            </div>
+            <div class="viagens-info">
+                <p class="viagens-info-item"><span class="viagens-info-destaque">Id do pedido:</span> 567890</p>
+                <p class="viagens-info-item"><span class="viagens-info-destaque">Data do pedido:</span> 20/02/2023</p>
+                <p class="viagens-info-item"><span class="viagens-info-destaque">Valor:</span> R$ 1600,00</p>
+            </div>
+            
+        </div>
+        </main>       
+            
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoATletras.png" alt="ALMA Turismo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="serviços.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="cliente.html">Área do Cliente</a></li>
+                </ul>
+            </div>
+            
+            <div class="social">
+                <ul>
+                    <a href="https://www.facebook.com"><img src="images/iconFacebook.png" alt="Facebook"></a> <br>
+                    <a href="https://www.twitter.com"><img src="images/iconTwiter.png" alt="Twitter"></a> <br>
+                    <a href="https://www.instagram.com"><img src="images/iconInsta.png" alt="Instagram"></a> <br>
+                    <a href="https://www.linkedin.com"><img src="images/iconLinkedin.png" alt="Linkedin"></a> <br>
+                </ul>
+            </div>
+            <p style="text-align: center; margin-bottom: 0px;">2023. Todos os direitos reservados. © Alma Turismo.</p>
+        </div>
+    </footer>
+        </div>
+    <script src="js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESIGN</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="estiloPainel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav>
+        <nav class="navbar navbar-expand-lg bg-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">PAINEL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-fill justify-content-end ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="painelDesign.html">Design</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="painelServico.html">Serviços</a>
+                  </li>
+                  <li class="nav-item dropdown d-flex">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="images/iconeUser.png" class="img-thumbnail thumb-icon"> ADMIN
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="loginPage.html">Sair</a></li>
+                    </ul>
+                  </li>
+                </div>
+
+                </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </nav>
+    <main>
+    <div class="corpo">
+      <div class="parte-cima">
+        <h1 style="text-align: center;">PAINEL DESIGN</h1>
+      <!--  <p> Lorem ipsum dolor sit amet. Qui optio nulla est neque accusamus et voluptates veritatis eum quidem adipisci aut nesciunt optio sed dolorem sunt. Ad esse consequatur in consequuntur earum nam molestias iste eum rerum harum et consequuntur quia non facere nemo. Sit voluptatem amet et sunt culpa ad veniam saepe a nesciunt magni aut quas iusto quo omnis enim? Qui omnis quaerat vel quaerat mollitia sed amet quibusdam in dignissimos voluptas eos illum officiis At nemo neque sed itaque omnis. A tempore sint et blanditiis iusto est voluptate officia ut vitae Quis quo labore magni a velit assumenda ut quidem dolor. Est incidunt voluptas et voluptates porro quo voluptas voluptatum eos incidunt eaque. Eos earum fugit non magni fugit qui veritatis placeat. </p><p>Eum ratione excepturi ut voluptatem quia eum aspernatur nobis. Aut praesentium dolores ut voluptatem incidunt et architecto asperiores sed quisquam aperiam est nisi dignissimos ea voluptas exercitationem! Aut expedita illo sed labore dolorem et iste neque et magnam rerum aut autem adipisci nam internos nostrum ea dicta nulla. Et voluptatibus autem et voluptatibus tempore et nisi ullam in fugiat voluptatibus. Et iste expedita quo enim amet hic odio galisum et eaque nulla aut natus quasi? Et consequatur consequatur quo voluptatem beatae et aliquid tenetur aut facilis nemo ut enim quia. Id omnis minus ut quaerat enim sit tempora ducimus. Qui dolores ipsam et eaque velit nam illo sunt qui consequatur odit. In saepe officiis sit suscipit facere qui maxime excepturi eum eligendi voluptate. </p><p>Non harum molestiae in sint quam ad quae blanditiis sed tempore alias sit voluptatem natus. Qui eius enim sit ipsa eaque et esse minima est provident repellat ut corporis ipsa est aperiam minima est libero dignissimos. Non fuga velit in perferendis modi ut earum sequi est nobis minus aut recusandae facilis in dolorem eaque aut nihil distinctio. Sed quod consequuntur et labore iusto aut beatae consequatur. Et laboriosam quia est facilis facere cum blanditiis suscipit et illum impedit sit maiores natus qui dolor dolores. Hic omnis deleniti et facere maxime et minima fuga sed inventore doloribus. Est eaque commodi et laudantium tempora vel nulla veniam aut accusamus provident. </p>
+        -->
+            <div class="container blocoUm margin-geral">
+              <div class="container text-center">
+                <div class="row align-items-center blocoUmItens">
+                  <h3>Gerenciar Informações</h3>
+                  <div class="col">
+                    <p>Alterar título do site:
+                      <input type="text" id="nomeSite">
+                      <form>
+                        <input type="radio" id="titleHome" name="altTitle" value="titleHome" style="width: min-content;">
+                        <label for="titleHome">Home</label>
+                        <input type="radio" id="titleServ" name="altTitle" value="titleServ" style="width: min-content;">
+                        <label for="titleServ">Serviços</label>
+                        <input type="radio" id="titleSobre" name="altTitle" value="titleSobre" style="width: min-content;">
+                        <label for="titleSobre">Sobre</label>
+                      </form>
+                      </p>
+                  </div>
+                  <div class="col">
+                    <p>Enviar logo:
+                      <input type="file" id="logoSite">
+                      <label for="logoSite"><img src="images/logoAT.png" alt="Logo Site" style="width: 150px; height: 150px"></label>
+                      </p>
+                  </div>
+                  <div class="col">
+                    <p>Enviar ícone:
+                      <input type="file" id="iconeSite">
+                      <label for="iconeSite"><img src="favicon.png" alt="Ícone Site" style="width: 60px; height: 60px;"></label>
+                      
+                  </div>
+                </div>
+              </div>
+              <button class="btn-sm" type="submit" style="margin-left: 75%; margin-right: 25%;">Salvar Alterações</button></p>
+
+            </div>
+          </div>
+          <div class="parte-baixo">
+            <div class="container blocoDois margin-geral">
+              <div class="container text-center">
+                <div class="row align-items-start">
+
+                  <div class="col-6">
+                    <h3>Gerenciar Cores</h3>
+                    <label for="corPrincipal">Alterar cor primária</label><br>
+                    <input type="color" id="corPrincipal" value="#47BDFF" style="height: 50px; width: 70px;">
+                    <br>
+                    <label for="corSub">Alterar cor secundária</label><br>
+                    <input type="color" id="corSub" value="#5C6784" style="height: 50px; width: 70px;"/>
+                    <br>
+                    <br>
+                    <button type="submit">Salvar Alterações</button> 
+                  </div>
+
+                  <div class="col-6">
+                    <h3>Gerenciar Redes Sociais - Links</h3>
+                      <div class="list-group">
+                        <p class="list-group-item list-group-item-action" aria-current="true">
+                          <img src="images/iconFacebook.png" alt="Facebook" class="row"><input class="inputLinks" type="link" id="linkFace" placeholder=" Facebook: ">
+                        </p>
+                        <p class="list-group-item list-group-item-action"><img src="images/iconInsta.png" alt="Instagram" class="row"><input class="inputLinks" type="link" id="linkInsta" placeholder="Instagram: "></p>
+                        <p class="list-group-item list-group-item-action"><img src="images/iconLinkedin.png" alt="Linkedin" class="row"><input class="inputLinks" type="link" id="linkLinkedin" placeholder="Linkedin: "></p>
+                        <p class="list-group-item list-group-item-action"><img src="images/iconTwiter.png" alt="Twitter" class="row"><input class="inputLinks" type="link" id="linkTwiter" placeholder="Twitter: "></p>
+                      </div>
+                    <button type="submit">Salvar Alterações</button> 
+                
+                  </div>
+                </div>
+              </div>
+
+               
+            </div>
+    </div>
+  </div>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+    </main>
+
+
+</body>
+</html>

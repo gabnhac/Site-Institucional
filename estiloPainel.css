@@ -1,0 +1,209 @@
+.bg-nav {
+    background-color: #1D263B !important;
+}
+.navbar-brand {
+    color: #47BDFF !important;
+}
+.nav-link {
+    color: #ffffff !important; 
+}
+.dropdown{
+    text-align: start !important;
+}
+.thumb-icon {
+    height: 25px;
+    width: 25px;
+}
+body {
+    font-family: Inter;
+    list-style: none;
+    background: rgb(234,241,252);
+    background: linear-gradient(180deg, rgba(234,241,252,0) 0%, rgba(234,241,252,1) 36%);
+    background-repeat: no-repeat;
+}
+
+
+.cad-destino {
+    border: 1px solid #5C6784;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border-radius: 15px;
+}
+.cad-destino img {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.cad-destino input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: auto;
+}
+
+#banner {
+    padding: auto;
+}
+
+.botao-salvar {
+    display: block !important;
+    align-self: flex-end;
+    margin-bottom: 4px;
+}
+
+li {
+    list-style: none;
+}
+
+.itemMaior {
+    width: 600px;
+    flex-grow: 4;
+}
+
+#logoSite {
+    height: 70px;
+    width: 70px;
+} 
+
+input[type="file"] {
+    display: none;
+}
+
+
+.iconLinks {
+    display: flex;
+    flex-direction: column !important;
+    padding: 10px;
+}
+
+#sobre {
+    height: 300px;
+    width: 550px;
+    padding: 25px;
+    margin-left: 10px;
+}
+
+.col {
+    border: 0px solid black !important; 
+}
+.col img {
+    border: 1px solid #5C6784;
+    border-radius: 5px;
+}
+
+.margin-geral {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.list-group {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.list-group-item {
+    padding-left: 25px !important;
+   
+}
+
+.col-sm-3 {
+    border: 1px solid black;
+}
+
+.col-sm-4 {
+    border: 1px solid black;
+}
+
+
+
+/*loginPage*/
+#blocoLogin {
+    background-color: white;
+    max-width: 300px;
+    margin: 200px auto 200px auto;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: inter;
+}
+#user{
+    display: flex;
+    align-items: center;
+    margin:5px;
+    background-color:white; 
+    padding: 5px 6px 2px 10px; 
+    border:2px solid #1D263B; 
+    border-radius: 10px;
+}
+#senha{
+    display: flex;
+    align-items: center;
+    margin:5px;
+    background-color:white; 
+    padding:10px 5px 4px 3px; 
+    border:2px solid #1D263B; 
+    border-radius: 10px;
+}
+#voltar{
+    background-color: #47BDFF;
+    border: 2px solid #1D263B;
+    border-radius: 10px;
+    width:80px;
+    font-family: inter;
+}
+#esqueci{
+    border:none;
+    background-color: white;
+    color: blue;
+    width: 140px;
+    margin: auto;
+    font-family: inter;
+}
+#logar{
+    background-color: #47BDFF;
+    border: 2px solid #1D263B;
+    border-radius: 10px;
+    width:80px;
+    font-family: inter;
+}
+
+#bodyLogin {
+    background: rgb(234,241,252);
+    background: linear-gradient(0deg, rgba(234,241,252,0) 0%, rgba(234,241,252,1) 36%);
+    background-repeat: no-repeat;
+   
+}
+
+.blocoUm {
+    border: 1px solid #5C6784;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+   
+}
+
+.blocoDois {
+    border: 1px solid #5C6784;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+   
+}
+
+.list-group-item {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.list-group img {
+    padding-right: 20px;
+}
+
+input {
+    width: 65%;
+    max-width: 3;
+    resize: both !important;
+}
